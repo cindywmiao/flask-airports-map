@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="../static/css/site.css">
+    <script type="text/javascript">
+    var $SCRIPT_ROOT = {{ request.script_root | tojson | safe }};
+    </script>
+    <script src="../static/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body>
+    <div id="map">
+        </div>
+    <div class="container">
+        <div id="over_map">
+            <div class="coupang">
+                <h1 class="font-coupang" brand-color="c">c</h1>
+                <h1 class="font-coupang" brand-color="o">o</h1>
+                <h1 class="font-coupang" brand-color="u">u</h1>
+                <h1 class="font-coupang" brand-color="p">p</h1>
+                <h1 class="font-coupang" brand-color="a">a</h1>
+                <h1 class="font-coupang" brand-color="n">n</h1>
+                <h1 class="font-coupang" brand-color="g">g</h1>
+            </div>
+            <canvas class="canvasMap" id="myCanvas"></canvas>
+            <div class="buttonTest">
+                <p>
+                    <span id="dx" hidden="hidden"></span>
+                    <span id="dy" hidden="hidden"></span>
+                </p>
+                <a href=# id="calculate" data-bind="click: addCustomer" hidden="hidden">generate</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../static/js/map2.js"></script>
+</html>

@@ -1,0 +1,77 @@
+html, body {
+    padding: 0px;
+    width:  100%;
+    height: 100%;
+    margin: 0px;
+}
+
+html, body, #wrapper{
+    height: 100%;
+    width: 100%;
+}
+#map {
+    height: 100%;
+    width: 100%;
+}
+#wrapper { position: absolute; min-height: 100%; }
+#over_map { position: absolute; top: 10px; left: 10px; z-index: 99; }
+@font-face { 
+    font-family: 'PFHandbook-Regular';
+    src: url('../fonts/PFHandbookPro-Regular.otf');
+    src: url('../fonts/PFHandbookPro-Regular.ttf') format('truetype'); 
+}
+img.map{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -100;
+}
+div.coupang {
+    position: absolute;
+    width: 250px;
+}
+.font-coupang {
+	display: inline-block;
+    font-family: PFHandbook-Regular;
+    font-size: 70px;
+    margin: -3px;
+    padding: 2px;
+    transition: all 0.5s linear;
+}
+
+h1[brand-color='c'], h1[brand-color='o'], h1[brand-color='u'] {
+	color: #571212;
+}
+h1[brand-color='p'] {
+    color: #d40e0d;
+}
+h1[brand-color='a'] {
+    color: #f89e1f;
+}
+h1[brand-color='n'] {
+    color: #84c13a;
+}
+h1[brand-color='g'] {
+    color: #48a7df;
+}
+
+canvas {
+    position: absolute;
+}
+
+div.buttonTest {
+    position: absolute;
+    top: 100px;
+}
+
+.modelCurtain {
+    height: 200px;
+    width: 200px;
+    position: absolute !important;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    border-radius: 10px;
+    top:200px;
+    left: 200px;
+}
+
