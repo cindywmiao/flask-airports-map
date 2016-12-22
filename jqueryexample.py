@@ -14,7 +14,7 @@ Bootstrap(app)
 
 
 @app.route('/_add_point')
-def add_numbers():
+def add():
     if len(longitudes) != 0:
         random_number = utils.random_int(len(longitudes))
         longitude = longitudes[random_number]
